@@ -1,0 +1,23 @@
+.top_menu{
+
+}
+.header{
+    border-style: solid;
+    border-width: 1px;
+    text-align: center;
+    width: 900px;
+}
+.footer{
+    border-style: solid;
+    border-width: 1px;
+}
+.page_container{
+    border-style: solid;
+    border-width: 1px;
+}
+.container{
+    border-style: solid;
+    border-width: 10px;
+    text-align: center;
+    background-color: aqua;
+}
