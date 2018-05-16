@@ -1,0 +1,16 @@
+html, body{
+    height: 100%
+}
+.flex-container{
+    display: flex;
+    flex-direction: row;
+    background-color: aquamarine;
+    width: 80%;
+    margin: auto;
+}
+.flex{
+    background-color: brown;
+    height: 50px;
+    width: 50px;
+    margin: 10px;
+}

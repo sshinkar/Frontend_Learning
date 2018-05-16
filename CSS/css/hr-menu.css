@@ -1,11 +1,27 @@
+html, body {
+    height: 100%;
+}
+
 .top_menu{
 
 }
+.test {
+    width: 11em; 
+    border: 1px solid #000000;
+    word-wrap: break-word;
+}
+
 .header{
     border-style: solid;
     border-width: 1px;
     text-align: center;
-    width: 900px;
+    width: 70%;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    background-color: aquamarine;
+    transform: translate(-50%, -50%);
+    
 }
 .footer{
     border-style: solid;
@@ -14,6 +30,7 @@
 .page_container{
     border-style: solid;
     border-width: 1px;
+    position: relative;
 }
 .container{
     border-style: solid;
