@@ -1,0 +1,79 @@
+html, body{
+    height: 100%;
+    font-family: Roboto;
+    color: whitesmoke;
+}
+body{
+    background-image: url('../images/banner-bg.jpeg');
+    background-repeat: repeat-y;
+    background-size: cover;
+}
+.flex-container-main{
+
+    border-style: solid;
+    border-width: 1px;
+
+    display: flex;
+    flex-direction: column; 
+
+}
+.flex-1{
+    border-style: solid;
+    border-width: 1px;
+    height: 100vh;
+    border-color: azure;
+
+}
+.flex-2{
+    border-style: solid;
+    border-width: 1px;
+    height: 100vh;
+    border-color: azure;
+}
+.flex-3{
+    border-style: solid;
+    border-width: 1px;
+    height: 100vh;
+    border-color: azure;
+}
+.flex-4{
+    border-style: solid;
+    border-width: 1px;
+    height: 20vh;
+    border-color: azure;
+}
+.flex-container-mini-1{
+    flex-direction: column;
+}
+.child-flex-1{
+    background-color:#51B9CC;
+    height: 50vh;
+    display: flex;
+    justify-content: space-between;
+}
+.child-flex-2{
+    background-color:#51CCA8;
+    height: 50vh;
+    display: flex;
+    justify-content: space-between;
+}
+.img-cars{
+    background-image: url(../images/cars-3-trailer.jpg);
+    background-size: cover;
+}
+.child-flex-1 .img-cars{
+    height: 50vh;
+    width: 45vw;
+}
+.child-flex-1 .txt-div{
+    align-self: center;
+    margin-right: 10%;
+}
+.child-flex-2 .img-cars{
+    height: 50vh;
+    width: 45vw;
+}
+.child-flex-2 .txt-div{
+    align-self: center;
+    margin-left: 10%;
+}
