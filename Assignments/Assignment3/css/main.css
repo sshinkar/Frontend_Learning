@@ -145,4 +145,22 @@ body{
     margin: auto;
     color: black;
 }
-
+.textbox{
+    padding: 10px;
+    font-size: 10px;
+    border-radius: 2px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+.button{
+    padding: 10px;
+    font-size: 10px;
+    border: solid 1px #6E81D0;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    background-color: #6E81D0;
+    color: white;
+}
+.textbox::selection{
+    border: solid 3px #6E81D0;
+}
