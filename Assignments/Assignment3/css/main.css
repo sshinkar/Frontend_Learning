@@ -5,24 +5,50 @@ html, body{
 }
 body{
     background-image: url('../images/banner-bg.jpeg');
-    background-repeat: repeat-y;
+    /* background-repeat: repeat-y; */
     background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: right bottom, left top;
 }
 .flex-container-main{
 
     border-style: solid;
     border-width: 1px;
-
     display: flex;
     flex-direction: column; 
-
 }
 .flex-1{
     border-style: solid;
     border-width: 1px;
     height: 100vh;
     border-color: azure;
-
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    font-size: 20px;
+}
+.header-flex{
+    display: flex;
+    position: fixed;
+    width: 100%;
+    font-size: 20px;
+}
+.header-flex > div{
+    margin: 10px;
+}
+.flex-menu > div{
+    display: flex;
+    flex-direction: column;
+    width: 15px;
+    height: 2px;
+    background-color: azure;
+    margin: 2px 0;
+}
+.flex-menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .flex-2{
     border-style: solid;
@@ -37,10 +63,17 @@ body{
     border-color: azure;
 }
 .flex-4{
+    display: flex;
+    flex-direction: column;
     border-style: solid;
     border-width: 1px;
     height: 20vh;
     border-color: azure;
+    background-color:#51CCA8;
+    padding: 30px;
+    color: black;
+    justify-content: center;
+    align-items: center;
 }
 .flex-container-mini-1{
     flex-direction: column;
@@ -77,3 +110,39 @@ body{
     align-self: center;
     margin-left: 10%;
 }
+.cars-card{
+    width: 250px;
+    background-color: whitesmoke;
+    text-align: center;
+    margin-left: 150px;
+    margin-right: 150px; 
+    height: 85%;
+    overflow: auto;
+}
+.card-container{
+    color: black;
+    padding: 10px;
+}
+.card-image{
+    content: url('../images/cars-3-trailer.jpg');
+    width: 100%;
+}
+.child-flex-3{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50%;
+    background: linear-gradient(120deg, #51CCA8 50%, #51B9CC 50%);
+}
+.fieldsets{
+    border: none;
+}
+.legend-white{
+    margin: auto;
+    color: whitesmoke;
+}
+.legend-black{
+    margin: auto;
+    color: black;
+}
+
