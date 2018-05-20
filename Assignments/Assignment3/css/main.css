@@ -24,9 +24,11 @@ body{
     height: 100vh;
     border-color: azure;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: flex-end;
     padding: 20px;
     font-size: 20px;
+
 }
 .header-flex{
     display: flex;
@@ -93,10 +95,12 @@ body{
 .img-cars{
     background-image: url(../images/cars-3-trailer.jpg);
     background-size: cover;
+    display: flex;
+    align-items: center;
 }
 .child-flex-1 .img-cars{
-    height: 50vh;
-    width: 45vw;
+    height: 100%;
+    width: 45%;
 }
 .child-flex-1 .txt-div{
     align-self: center;
@@ -111,13 +115,13 @@ body{
     margin-left: 10%;
 }
 .cars-card{
-    width: 250px;
+    width: 300px;
     background-color: whitesmoke;
     text-align: center;
-    margin-left: 150px;
-    margin-right: 150px; 
+    margin-left: 18%;
+    margin-right: 18%;
     height: 85%;
-    overflow: auto;
+    overflow: hidden;
 }
 .card-container{
     color: black;
@@ -133,9 +137,12 @@ body{
     align-items: center;
     height: 50%;
     background: linear-gradient(120deg, #51CCA8 50%, #51B9CC 50%);
+    width: 100%;
 }
 .fieldsets{
     border: none;
+    color: black;
+    padding: 0px;
 }
 .legend-white{
     margin: auto;
@@ -148,19 +155,99 @@ body{
 .textbox{
     padding: 10px;
     font-size: 10px;
-    border-radius: 2px;
     border-top-left-radius: 3px;
     border-bottom-left-radius: 3px;
+    border: none;
+    width: 150px;
 }
 .button{
     padding: 10px;
     font-size: 10px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+
+}
+.button-email{
+    background-color: #6E81D0;
     border: solid 1px #6E81D0;
     border-top-right-radius: 3px;
-    border-bottom-right-radius: 3px;
-    background-color: #6E81D0;
-    color: white;
+    border-bottom-right-radius: 3px;  
+    width: 80px; 
 }
-.textbox::selection{
-    border: solid 3px #6E81D0;
+.button-blue{
+    background-color: #51B9CC;
+    border-radius: 3px;
+    border-color: #51B9CC;
+    border:none;
+}
+.button-green{
+    background-color: #51CCA8;
+    border-radius: 3px;
+    border-color: #51CCA8;
+    border:none;
+}
+.textbox:focus{
+    /* width: 150px;
+    border-style: inset;
+    border-width: 2px;
+    border-color: #6E81D0; */
+    /* box-sizing: border-box; */
+    border:none;
+    outline-style: inset;
+    outline-color: #6E81D0;
+    outline-width: 2px;
+}
+.div-over-left{
+    background: rgba(255, 255, 255, 1);
+    height: 60%;
+    width: 100%;
+    transform: translateX(40%);
+    padding: 20px;
+    box-sizing: border-box;
+}
+.div-over-right{
+    background: rgba(255, 255, 255, 1);
+    height: 60%;
+    width: 100%;
+    transform: translateX(-40%);
+    padding: 20px;
+    box-sizing: border-box;
+}
+.div-down-arrow{
+    height: 60px;
+    width: 50px;
+    border: solid;
+    border-color: white;
+    border-radius: 20px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 40px;
+    background-color: rgba(255, 255, 255, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.down-arrow{
+    transform: rotate(45deg);
+    height: 10px;
+    width: 10px;
+    border: solid;
+    border-top-width: 0px;
+    border-left-width: 0px;
+    position: relative;
+}
+
+.vertical-line{
+    width: 15px;
+    height: 3px;
+    border: none;
+    /* border-bottom: 1px solid black; */
+    position: absolute;
+    background-color: white;
+    transform: rotate(45deg);
+    width: 12px;
+    height: 3px;
+    margin-top: 5px;
 }
