@@ -1,0 +1,26 @@
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: lightblue;
+        background-image: none;
+    }
+    .child-flex-1{
+        flex-direction: column;
+    }
+    .child-flex-1 .img-cars {
+        height: 90%;
+        width: 100%;
+    }
+    .child-flex-2{
+        flex-direction: column-reverse;
+    }
+    .child-flex-2 .img-cars {
+        height: 90%;
+        width: 100%;
+    }
+    .child-flex-3{
+        flex-direction: column;
+    }
+    .cars-card{
+        width: 90%;
+    }
+}
