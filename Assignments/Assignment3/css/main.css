@@ -97,6 +97,8 @@ body{
     background-size: cover;
     display: flex;
     align-items: center;
+    background-position: center center;
+    max-width: 100%;
 }
 .child-flex-1 .img-cars{
     height: 100%;
@@ -107,8 +109,8 @@ body{
     margin-right: 10%;
 }
 .child-flex-2 .img-cars{
-    height: 50vh;
-    width: 45vw;
+    height: 100%;
+    width: 45%;
 }
 .child-flex-2 .txt-div{
     align-self: center;
