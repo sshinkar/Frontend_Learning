@@ -61,7 +61,7 @@ body{
     width: 100%;
     background-color: #51CCA8;
 }
-.flex-4{
+.flex-5{
     display: flex;
     flex-direction: column;
     border-style: solid;
@@ -73,6 +73,10 @@ body{
     color: black;
     justify-content: center;
     align-items: center;
+}
+.flex-4{
+    background: linear-gradient(120deg, #51CCA8 50%, #51B9CC 50%);
+    padding: 20px 0px;
 }
 .flex-container-mini-1{
     flex-direction: column;
@@ -143,8 +147,8 @@ body{
     justify-content: space-between;
     align-items: center;
     height: 50%;
-    background: linear-gradient(120deg, #51CCA8 50%, #51B9CC 50%);
-    width: 100%;
+    width: 90%;
+    margin: auto;
 }
 .fieldsets{
     border: none;
