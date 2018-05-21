@@ -19,10 +19,10 @@ body{
     flex-direction: column; 
 }
 .flex-1{
-    border-style: solid;
-    border-width: 1px;
+    /* border-style: solid;
+    border-width: 1px; */
     height: 98vh;
-    border-color: azure;
+    /* border-color: azure; */
     display: flex;
     justify-content: center;
     align-items: flex-end;
@@ -53,24 +53,24 @@ body{
     justify-content: center;
 }
 .flex-2{
-    border-style: solid;
-    border-width: 1px;
+    /* border-style: solid;
+    border-width: 1px; */
     height: 120vh;
-    border-color: azure;
+    /* border-color: azure; */
 }
 .flex-3{
-    border-style: solid;
-    border-width: 1px;
+    /* border-style: solid;
+    border-width: 1px; */
     height: 120vh;
-    border-color: azure;
+    /* border-color: azure; */
 }
 .flex-4{
     display: flex;
     flex-direction: column;
-    border-style: solid;
-    border-width: 1px;
+    /* border-style: solid;
+    border-width: 1px; */
     height: 20%;
-    border-color: azure;
+    /* border-color: azure; */
     background-color:#51CCA8;
     padding: 30px;
     color: black;
@@ -291,18 +291,21 @@ body{
     }
  }
  .legend-black:after {
-    content: ""; /* This is necessary for the pseudo element to work. */ 
-    display: block; /* This will put the pseudo element on its own line. */
-    margin: 0 auto; /* This will center the border. */
-    width: 70%; /* Change this to whatever width you want. */
-    padding-top: 20px; /* This creates some space between the element and the border. */
-    border-bottom: 3px solid black; /* This creates the border. Replace black with whatever color you want. */
+    content: ""; 
+    display: block;
+    margin: 0 auto;
+    width: 70%;
+    padding-top: 20px;
+    border-bottom: 3px solid black; 
   }
   .legend-white:after {
-    content: ""; /* This is necessary for the pseudo element to work. */ 
-    display: block; /* This will put the pseudo element on its own line. */
-    margin: 0 auto; /* This will center the border. */
-    width: 70%; /* Change this to whatever width you want. */
-    padding-top: 20px; /* This creates some space between the element and the border. */
-    border-bottom: 3px solid; /* This creates the border. Replace black with whatever color you want. */
+    content: ""; 
+    display: block; 
+    margin: 0 auto;
+    width: 70%; 
+    padding-top: 20px; 
+    border-bottom: 3px solid;
+  }
+  .div-over-mobile{
+      visibility: hidden;
   }

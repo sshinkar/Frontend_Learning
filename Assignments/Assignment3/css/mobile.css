@@ -1,7 +1,6 @@
 @media only screen and (max-width: 600px) {
     body {
-        background-color: lightblue;
-        background-image: none;
+        background-image: url('../images/banner-bg.jpeg');
     }
     .child-flex-1{
         flex-direction: column;
@@ -50,5 +49,18 @@
     .child-flex-2 .txt-div{
         margin: auto;
         padding: 20px 0px 20px 0;
+    }
+    .div-over-mobile{
+        visibility: visible;
+        background: rgba(255, 255, 255, 1);
+        height: 60%;
+        width: 100%;
+        padding: 20px;
+        box-sizing: border-box;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 }
