@@ -19,10 +19,10 @@ body{
     flex-direction: column; 
 }
 .flex-1{
-    /* border-style: solid;
-    border-width: 1px; */
+    border-style: solid;
+    border-width: 1px;
     height: 98vh;
-    /* border-color: azure; */
+    border-color: azure;
     display: flex;
     justify-content: center;
     align-items: flex-end;
@@ -53,24 +53,24 @@ body{
     justify-content: center;
 }
 .flex-2{
-    /* border-style: solid;
-    border-width: 1px; */
+    border-style: solid;
+    border-width: 1px;
     height: 120vh;
-    /* border-color: azure; */
+    border-color: azure;
 }
 .flex-3{
-    /* border-style: solid;
-    border-width: 1px; */
+    border-style: solid;
+    border-width: 1px;
     height: 120vh;
-    /* border-color: azure; */
+    border-color: azure;
 }
 .flex-4{
     display: flex;
     flex-direction: column;
-    /* border-style: solid;
-    border-width: 1px; */
+    border-style: solid;
+    border-width: 1px;
     height: 20%;
-    /* border-color: azure; */
+    border-color: azure;
     background-color:#51CCA8;
     padding: 30px;
     color: black;
