@@ -21,7 +21,7 @@ body{
 .flex-1{
     border-style: solid;
     border-width: 1px;
-    height: 100vh;
+    height: 98vh;
     border-color: azure;
     display: flex;
     justify-content: center;
@@ -55,13 +55,13 @@ body{
 .flex-2{
     border-style: solid;
     border-width: 1px;
-    height: 100vh;
+    height: 120vh;
     border-color: azure;
 }
 .flex-3{
     border-style: solid;
     border-width: 1px;
-    height: 100vh;
+    height: 120vh;
     border-color: azure;
 }
 .flex-4{
@@ -79,16 +79,17 @@ body{
 }
 .flex-container-mini-1{
     flex-direction: column;
+    height: 100%;
 }
 .child-flex-1{
     background-color:#51B9CC;
-    height: 50vh;
+    height: 50%;
     display: flex;
     justify-content: space-between;
 }
 .child-flex-2{
     background-color:#51CCA8;
-    height: 50vh;
+    height: 50%;
     display: flex;
     justify-content: space-between;
 }
@@ -117,13 +118,17 @@ body{
     margin-left: 10%;
 }
 .cars-card{
-    width: 300px;
+    width: 250px;
     background-color: whitesmoke;
     text-align: center;
-    margin-left: 18%;
-    margin-right: 18%;
     height: 85%;
     overflow: hidden;
+}
+.card-left{
+    margin-left: 18%;
+}
+.card-right{
+    margin-right: 18%;
 }
 .card-container{
     color: black;
@@ -211,6 +216,10 @@ body{
     transform: translateX(40%);
     padding: 20px;
     box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .div-over-right{
     background: rgba(255, 255, 255, 1);
@@ -219,6 +228,10 @@ body{
     transform: translateX(-40%);
     padding: 20px;
     box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .div-down-arrow{
     height: 60px;
@@ -277,23 +290,19 @@ body{
         transform:translateY(-0px);
     }
  }
- /* @keyframes bounce {
-    25% {
-      top:7px;
-    }
-    45% {
-      top:40px;
-    }
-    64% {
-       top:19px;
-    }
-    76% {
-       top:40px;
-    }
-    96%{
-       top: 25px
-    }
-    100% {
-       top:40px;
-    }
- } */
+ .legend-black:after {
+    content: ""; /* This is necessary for the pseudo element to work. */ 
+    display: block; /* This will put the pseudo element on its own line. */
+    margin: 0 auto; /* This will center the border. */
+    width: 70%; /* Change this to whatever width you want. */
+    padding-top: 20px; /* This creates some space between the element and the border. */
+    border-bottom: 3px solid black; /* This creates the border. Replace black with whatever color you want. */
+  }
+  .legend-white:after {
+    content: ""; /* This is necessary for the pseudo element to work. */ 
+    display: block; /* This will put the pseudo element on its own line. */
+    margin: 0 auto; /* This will center the border. */
+    width: 70%; /* Change this to whatever width you want. */
+    padding-top: 20px; /* This creates some space between the element and the border. */
+    border-bottom: 3px solid; /* This creates the border. Replace black with whatever color you want. */
+  }
