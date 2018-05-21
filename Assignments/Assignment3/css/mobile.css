@@ -43,4 +43,12 @@
     .div-over-right{
         visibility: hidden;
     }
+    .child-flex-1 .txt-div{
+        margin: auto;
+        padding: 20px 0px 20px 0;
+    }
+    .child-flex-2 .txt-div{
+        margin: auto;
+        padding: 20px 0px 20px 0;
+    }
 }
