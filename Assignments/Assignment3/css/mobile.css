@@ -4,15 +4,26 @@
     }
     .child-flex-1{
         flex-direction: column;
-        height: 50%;
+        width: 100%;
+    }
+    .child-flex-1 :nth-child(2) {
+         order: 1;
+    }
+    .child-flex-1 > .cars-img-wrapper{
+        position: relative;
+        width: 100%;
+    }
+    .child-flex-2 > .cars-img-wrapper{
+        position: relative;
+        width: 100%;
     }
     .child-flex-1 .img-cars {
         height: 90%;
         width: 100%;
     }
     .child-flex-2{
-        flex-direction: column-reverse;
-        height: 50%;
+        flex-direction: column;
+        width: 100%;
     }
     .child-flex-2 .img-cars {
         height: 90%;
@@ -29,9 +40,11 @@
     }
     .flex-2{
         height: 100%;
+        padding: 0;
     }
     .flex-3{
         height: 100%;
+        padding: 0;
     }
     .flex-container-mini-1{
         height: 100%;
@@ -62,5 +75,10 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+    .div-newsletter{
+        width: 100%;
+        align-items: center;
+        box-sizing: border-box;
     }
 }
