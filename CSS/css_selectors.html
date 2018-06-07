@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="css/css_selectors.css">
+    <title>Background - CSS Examples</title>
+<style> 
+
+</style>
+</head>
+
+<body>
+
+<div>
+    <h4>:checked</h4>
+    <form action="">
+        <input type="radio" checked="checked" value="male" name="gender"><lable> Male</lable><br>
+        <input type="radio" value="female" name="gender"> <lable>Female</lable><br>
+        
+        <input type="checkbox" checked="checked" value="Bike"> <lable>I have a bike</lable><br>
+        <input type="checkbox" value="Car"> <lable>I have a car </lable>
+    </form>
+</div>
+
+<div>
+        <h4>:active & :visited</h4>
+        <a href="#" class="link" title="Link_1"></a> <br>
+        <a href="#" class="link" title="Link_1"></a> <br>
+        <a href="#" class="link" title="Link_1"></a>
+</div>
+
+<div>
+        <h4>:empty</h4>
+        <p class="empty"></p>
+</div>
+
+<div>
+        <h4>:enable & :disable</h4>
+        <form action="">
+            First name: <input type="text" value="Sagar"><br>
+            Last name: <input type="text" value="Shinkar"><br>
+
+            Country: <input type="text" disabled="disabled" value="India">
+        </form>
+</div>
+
+<div>
+        <h4>[attribute|=value] VS [attribute^=value]</h4>
+
+        <p lang="english">english      [attribute|=value]  [attribute^=value]</p>
+        <p lang="en-ff">en-ff      [attribute|=value]  [attribute^=value]</p>  
+        <p lang="en-us">en-us      [attribute|=value]  [attribute^=value]</p>    
+        <p lang="en-gb">en-gb      [attribute|=value] [attribute^=value]</p>  
+        <p lang="en ff">en ff      [attribute^=value]</p>  
+        <p lang="en">en ff      [attribute^=value]</p>  
+
+</div>
+
+
+
+
+</body>
+</html>

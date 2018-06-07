@@ -1,0 +1,30 @@
+html, body{
+    /* height: 100%; */
+}
+.flex-container{
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+.main-container{
+    width: 70%;
+}
+div {
+    border-style: solid;
+    border-width: 1px;
+    box-sizing: border-box;
+}
+.left_side_menu{
+    width: 30%;
+}
+.tile{
+    height: 100%;
+    width: 20%;
+}
+.first-row{
+    height: 30%;
+}
+.flex-tiles-row{
+    justify-content: center;
+    align-items: center;
+}

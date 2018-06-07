@@ -1,0 +1,35 @@
+input:checked + lable{
+    color:red;
+}
+
+a:active::before {
+    content: "\2713 ";         
+}
+
+a:visited::before {
+    content: "\2713 ";            
+}
+
+a:before {
+   content: attr(title) "";      
+}
+
+.empty:empty{
+    height: 100px;
+    width: 100px;
+    background-color: blueviolet;
+}
+
+input[type=text]:disabled {
+    background: red;
+}
+input[type=text]:enabled {
+    background:blue;
+}
+
+p[lang|=en]{
+    color: red;
+}
+p[lang^=en]{
+    color: blue;
+}
