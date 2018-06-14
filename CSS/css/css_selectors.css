@@ -7,11 +7,16 @@ a:active::before {
 }
 
 a:visited::before {
-    content: "\2713 ";            
+    content: "\2713 ";
+    color: yellowgreen;
 }
 
-a:before {
+a::before {
    content: attr(title) "";      
+}
+
+a:visited{
+    color: brown;
 }
 
 .empty:empty{
@@ -28,8 +33,46 @@ input[type=text]:enabled {
 }
 
 p[lang|=en]{
-    color: red;
+    /* color: red; */
 }
 p[lang^=en]{
     color: blue;
+}
+
+p[class="p-after"]{
+    
+    width: 100px;
+}
+p[class="p-after"]::after{
+
+    content: "";
+    display: block;
+    background: url("../images/fan.png") no-repeat;
+    width: 20px;
+    height: 20px;
+    float: right;
+    background-size: contain;
+}
+
+p[class="p-before"]::before{
+
+    content: "";
+    display: block;
+    background: url("../images/bat.png") no-repeat;
+    width: 20px;
+    height: 20px;
+    float: left;
+    background-size: contain;
+}
+
+p[class="p-normal"]::after{
+    content: "";
+    display: block;
+    background-color: red;
+    height: 50px;
+    width: 50px;
+}
+
+.class1.class2{
+
 }
