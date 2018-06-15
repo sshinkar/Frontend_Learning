@@ -68,6 +68,8 @@ div {
 }
 .events-tile{
     height: 100%;
+    background-color: darkcyan;
+    border-radius: 7px;
 }
 .header{
     width: 100%;
