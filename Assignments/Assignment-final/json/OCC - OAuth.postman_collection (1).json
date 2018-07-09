@@ -1,0 +1,428 @@
+{
+	"info": {
+		"_postman_id": "b27c03de-2655-4165-b08c-54a5353f3c4d",
+		"name": "OCC - OAuth",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Admin",
+			"description": null,
+			"item": [
+				{
+					"name": "OAuth: mfalogin",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "688ddd78-f6d4-41b5-9bea-291884e2190e",
+								"type": "text/javascript",
+								"exec": [
+									"var jsonData = JSON.parse(responseBody);",
+									"postman.setEnvironmentVariable(\"var_access_token\", jsonData.access_token);"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "grant_type=password&username=samriti.kanwar@objectedge.com&password=Or@cl3n0w&totp_code=123456"
+						},
+						"url": {
+							"raw": "https://ccadmin-z1ma.oracleoutsourcing.com/ccadmin/v1/mfalogin",
+							"protocol": "https",
+							"host": [
+								"ccadmin-z1ma",
+								"oracleoutsourcing",
+								"com"
+							],
+							"path": [
+								"ccadmin",
+								"v1",
+								"mfalogin"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "OAuth: login (External Application)",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "98dc5d83-71a5-46b9-8843-e212ffef7015",
+								"type": "text/javascript",
+								"exec": [
+									""
+								]
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"id": "c6874004-8b90-4ff9-800d-73e05deaa9aa",
+								"type": "text/javascript",
+								"exec": [
+									"var jsonData = JSON.parse(responseBody);",
+									"postman.setEnvironmentVariable(\"var_access_token\", jsonData.access_token);"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIyYWY3Y2YzMi1lZDMxLTQyZGUtYjY0Mi0yY2FiMjA0MzNkNWEiLCJpc3MiOiJhcHBsaWNhdGlvbkF1dGgiLCJleHAiOjE1NTk3Nzg0ODksImlhdCI6MTUyODI0MjQ4OX0=.TCWyWkprMGsa+kgtyY0FT00MzBUPPfnuzihNN40uTQk="
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "grant_type=client_credentials"
+						},
+						"url": {
+							"raw": "https://ccadmin-z1ma.oracleoutsourcing.com/ccadmin/v1/login",
+							"protocol": "https",
+							"host": [
+								"ccadmin-z1ma",
+								"oracleoutsourcing",
+								"com"
+							],
+							"path": [
+								"ccadmin",
+								"v1",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "OAuth: refresh",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "1a475922-153d-4475-8fa5-5d10a4455fbf",
+								"type": "text/javascript",
+								"exec": [
+									"var jsonData = JSON.parse(responseBody);",
+									"postman.setEnvironmentVariable(\"var_access_token\", jsonData.access_token);"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{var_access_token}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://ccadmin-z1ma.oracleoutsourcing.com/ccadmin/v1/refresh",
+							"protocol": "https",
+							"host": [
+								"ccadmin-z1ma",
+								"oracleoutsourcing",
+								"com"
+							],
+							"path": [
+								"ccadmin",
+								"v1",
+								"refresh"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "OAuth: getRegistry",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "grant_type=password&username=samriti.kanwar@objectedge.com&password=Or@cl3n0w&totp_code=123456"
+						},
+						"url": {
+							"raw": "https://ccadmin-z1ma.oracleoutsourcing.com/ccadmin/v1/registry",
+							"protocol": "https",
+							"host": [
+								"ccadmin-z1ma",
+								"oracleoutsourcing",
+								"com"
+							],
+							"path": [
+								"ccadmin",
+								"v1",
+								"registry"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "OAuth: verify",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{var_access_token}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://ccadmin-z1ma.oracleoutsourcing.com/ccadmin/v1/verify",
+							"protocol": "https",
+							"host": [
+								"ccadmin-z1ma",
+								"oracleoutsourcing",
+								"com"
+							],
+							"path": [
+								"ccadmin",
+								"v1",
+								"verify"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Agent",
+			"description": null,
+			"item": [
+				{
+					"name": "OAuth: login",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "7ce77816-a3b7-48ec-9bf9-4a844c9391c9",
+								"type": "text/javascript",
+								"exec": [
+									"var jsonData = JSON.parse(responseBody);",
+									"postman.setEnvironmentVariable(\"var_access_token\", jsonData.access_token);"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "grant_type=password&username=samriti.kanwar@objectedge.com&password=Or@cl3n0w"
+						},
+						"url": {
+							"raw": "https://ccadmin-z1ma.oracleoutsourcing.com/ccagent/v1/login",
+							"protocol": "https",
+							"host": [
+								"ccadmin-z1ma",
+								"oracleoutsourcing",
+								"com"
+							],
+							"path": [
+								"ccagent",
+								"v1",
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Store",
+			"description": null,
+			"item": [
+				{
+					"name": "OAuth: login (Shopper)",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "159fb2fe-f627-47e1-9ee3-79d80c76d27b",
+								"type": "text/javascript",
+								"exec": [
+									"var jsonData = JSON.parse(responseBody);",
+									"postman.setEnvironmentVariable(\"var_access_token\", jsonData.access_token);"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							},
+							{
+								"key": "Authorization",
+								"value": "Basic YWRtaW46YWRtaW4="
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "grant_type=password&username=samriti.kanwar@objectedge.com&password=St0r3fr0nt"
+						},
+						"url": {
+							"raw": "https://ccstore-z1ma.oracleoutsourcing.com/ccstore/v1/login/",
+							"protocol": "https",
+							"host": [
+								"ccstore-z1ma",
+								"oracleoutsourcing",
+								"com"
+							],
+							"path": [
+								"ccstore",
+								"v1",
+								"login",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Stock-Status",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJSUzI1NiIsImprdSI6InR6MW1hMGMwIiwia2lkIjpudWxsLCJ4NWMiOm51bGwsIng1dSI6Imh0dHA6Ly9jY3N0b3JlLXoxbWEub3JhY2xlb3V0c291cmNpbmcuY29tOjQ0My9jY3N0b3JlL3YxL3RlbmFudENlcnRDaGFpbiJ9.eyJpYXQiOjE1MzA4Njc4MzMsImV4cCI6MTUzMDg2ODc2Mywic3ViIjoiMTM2OTE3IiwiYXVkIjoic3RvcmVmcm9udCIsImNvbS5vcmFjbGUuYXRnLmNsb3VkLmNvbW1lcmNlLnJvbGVzIjpudWxsLCJvY2NzLmFkbWluLnJvbGVzIjpudWxsLCJpc3MiOiJodHRwOi8vY2NzdG9yZS16MW1hLm9yYWNsZW91dHNvdXJjaW5nLmNvbTo0NDMvIiwib2Njcy5hZG1pbi5sb2NhbGUiOm51bGwsIm9jY3MuYWRtaW4udHoiOm51bGwsIm9jY3MuYWRtaW4udGVuYW50VHoiOiJFdGMvVVRDIiwib2Njcy5hZG1pbi5rZWVwQWxpdmVVUkwiOiJodHRwOi8vY2NzdG9yZS16MW1hLm9yYWNsZW91dHNvdXJjaW5nLmNvbTo0NDMvIiwib2Njcy5hZG1pbi50b2tlblJlZnJlc2hVUkwiOiJodHRwOi8vY2NzdG9yZS16MW1hLm9yYWNsZW91dHNvdXJjaW5nLmNvbTo0NDMvY2NzdG9yZS92MS9zc29Ub2tlbnMvcmVmcmVzaCIsIm9jY3MuYWRtaW4udmVyc2lvbiI6IjE4LjMiLCJvY2NzLmFkbWluLmJ1aWxkIjoiamVua2lucy1Bc3NlbWJsZV9DbG91ZF9Db21tZXJjZV9FQVJzXy1WZXJzaW9uX0JyYW5jaC01MDMiLCJvY2NzLmFkbWluLmVtYWlsIjpudWxsLCJvY2NzLmFkbWluLnByb2ZpbGVJZCI6IjEzNjkxNyIsIm9jY3MuYWdlbnQub2JvIjpudWxsLCJvY2NzLmFkbWluLmZpcnN0TmFtZSI6bnVsbCwib2Njcy5hZG1pbi5sYXN0TmFtZSI6bnVsbH0=.P9UzJZE+zOLxIuKb8eCshaILj4yci3kQt6mOamOoMvdDp2ps/no9CE3vKIXTvIStKyGLScfeo+EpOB9CE5PPBWOKgvdF+50RFuXAJcttzeIzsMYtQ8GiJZNztcufBXb8oW4j4e/ZTRgx/SdW17vgWdthsdDE9MXN25cm57uUw4p7VxpqJrYn1dd0Ys2WO30loijdLqgDXcjnIY//aTo7ORv2WIIC9NHK2vx0jJkx0F+o3W0jVHgf5ZxM1uAivY2SMap+4fx83cpbzUvn/TJpVkkGL+QrDMxcvW4+AsvM04z2haWHH56Jcs51Bf65On3Vxe6xsU/Mob6eyIGw9bGaaA=="
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "https://ccadmin-z1ma.oracleoutsourcing.com/ccstore/v1/stockStatus/athlete-duck?skuId=sku1&catalogId=",
+							"protocol": "https",
+							"host": [
+								"ccadmin-z1ma",
+								"oracleoutsourcing",
+								"com"
+							],
+							"path": [
+								"ccstore",
+								"v1",
+								"stockStatus",
+								"athlete-duck"
+							],
+							"query": [
+								{
+									"key": "skuId",
+									"value": "sku1"
+								},
+								{
+									"key": "catalogId",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get-One-Product",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJSUzI1NiIsImprdSI6InR6MW1hMGMwIiwia2lkIjpudWxsLCJ4NWMiOm51bGwsIng1dSI6Imh0dHA6Ly9jY3N0b3JlLXoxbWEub3JhY2xlb3V0c291cmNpbmcuY29tOjQ0My9jY3N0b3JlL3YxL3RlbmFudENlcnRDaGFpbiJ9.eyJpYXQiOjE1MzA4Njc4MzMsImV4cCI6MTUzMDg2ODc2Mywic3ViIjoiMTM2OTE3IiwiYXVkIjoic3RvcmVmcm9udCIsImNvbS5vcmFjbGUuYXRnLmNsb3VkLmNvbW1lcmNlLnJvbGVzIjpudWxsLCJvY2NzLmFkbWluLnJvbGVzIjpudWxsLCJpc3MiOiJodHRwOi8vY2NzdG9yZS16MW1hLm9yYWNsZW91dHNvdXJjaW5nLmNvbTo0NDMvIiwib2Njcy5hZG1pbi5sb2NhbGUiOm51bGwsIm9jY3MuYWRtaW4udHoiOm51bGwsIm9jY3MuYWRtaW4udGVuYW50VHoiOiJFdGMvVVRDIiwib2Njcy5hZG1pbi5rZWVwQWxpdmVVUkwiOiJodHRwOi8vY2NzdG9yZS16MW1hLm9yYWNsZW91dHNvdXJjaW5nLmNvbTo0NDMvIiwib2Njcy5hZG1pbi50b2tlblJlZnJlc2hVUkwiOiJodHRwOi8vY2NzdG9yZS16MW1hLm9yYWNsZW91dHNvdXJjaW5nLmNvbTo0NDMvY2NzdG9yZS92MS9zc29Ub2tlbnMvcmVmcmVzaCIsIm9jY3MuYWRtaW4udmVyc2lvbiI6IjE4LjMiLCJvY2NzLmFkbWluLmJ1aWxkIjoiamVua2lucy1Bc3NlbWJsZV9DbG91ZF9Db21tZXJjZV9FQVJzXy1WZXJzaW9uX0JyYW5jaC01MDMiLCJvY2NzLmFkbWluLmVtYWlsIjpudWxsLCJvY2NzLmFkbWluLnByb2ZpbGVJZCI6IjEzNjkxNyIsIm9jY3MuYWdlbnQub2JvIjpudWxsLCJvY2NzLmFkbWluLmZpcnN0TmFtZSI6bnVsbCwib2Njcy5hZG1pbi5sYXN0TmFtZSI6bnVsbH0=.P9UzJZE+zOLxIuKb8eCshaILj4yci3kQt6mOamOoMvdDp2ps/no9CE3vKIXTvIStKyGLScfeo+EpOB9CE5PPBWOKgvdF+50RFuXAJcttzeIzsMYtQ8GiJZNztcufBXb8oW4j4e/ZTRgx/SdW17vgWdthsdDE9MXN25cm57uUw4p7VxpqJrYn1dd0Ys2WO30loijdLqgDXcjnIY//aTo7ORv2WIIC9NHK2vx0jJkx0F+o3W0jVHgf5ZxM1uAivY2SMap+4fx83cpbzUvn/TJpVkkGL+QrDMxcvW4+AsvM04z2haWHH56Jcs51Bf65On3Vxe6xsU/Mob6eyIGw9bGaaA=="
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "https://ccadmin-z1ma.oracleoutsourcing.com/ccstore/v1/products/athlete-duck",
+							"protocol": "https",
+							"host": [
+								"ccadmin-z1ma",
+								"oracleoutsourcing",
+								"com"
+							],
+							"path": [
+								"ccstore",
+								"v1",
+								"products",
+								"athlete-duck"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get-All-Products",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJSUzI1NiIsImprdSI6InR6MW1hMGMwIiwia2lkIjpudWxsLCJ4NWMiOm51bGwsIng1dSI6Imh0dHA6Ly9jY3N0b3JlLXoxbWEub3JhY2xlb3V0c291cmNpbmcuY29tOjQ0My9jY3N0b3JlL3YxL3RlbmFudENlcnRDaGFpbiJ9.eyJpYXQiOjE1MzA4Njc4MzMsImV4cCI6MTUzMDg2ODc2Mywic3ViIjoiMTM2OTE3IiwiYXVkIjoic3RvcmVmcm9udCIsImNvbS5vcmFjbGUuYXRnLmNsb3VkLmNvbW1lcmNlLnJvbGVzIjpudWxsLCJvY2NzLmFkbWluLnJvbGVzIjpudWxsLCJpc3MiOiJodHRwOi8vY2NzdG9yZS16MW1hLm9yYWNsZW91dHNvdXJjaW5nLmNvbTo0NDMvIiwib2Njcy5hZG1pbi5sb2NhbGUiOm51bGwsIm9jY3MuYWRtaW4udHoiOm51bGwsIm9jY3MuYWRtaW4udGVuYW50VHoiOiJFdGMvVVRDIiwib2Njcy5hZG1pbi5rZWVwQWxpdmVVUkwiOiJodHRwOi8vY2NzdG9yZS16MW1hLm9yYWNsZW91dHNvdXJjaW5nLmNvbTo0NDMvIiwib2Njcy5hZG1pbi50b2tlblJlZnJlc2hVUkwiOiJodHRwOi8vY2NzdG9yZS16MW1hLm9yYWNsZW91dHNvdXJjaW5nLmNvbTo0NDMvY2NzdG9yZS92MS9zc29Ub2tlbnMvcmVmcmVzaCIsIm9jY3MuYWRtaW4udmVyc2lvbiI6IjE4LjMiLCJvY2NzLmFkbWluLmJ1aWxkIjoiamVua2lucy1Bc3NlbWJsZV9DbG91ZF9Db21tZXJjZV9FQVJzXy1WZXJzaW9uX0JyYW5jaC01MDMiLCJvY2NzLmFkbWluLmVtYWlsIjpudWxsLCJvY2NzLmFkbWluLnByb2ZpbGVJZCI6IjEzNjkxNyIsIm9jY3MuYWdlbnQub2JvIjpudWxsLCJvY2NzLmFkbWluLmZpcnN0TmFtZSI6bnVsbCwib2Njcy5hZG1pbi5sYXN0TmFtZSI6bnVsbH0=.P9UzJZE+zOLxIuKb8eCshaILj4yci3kQt6mOamOoMvdDp2ps/no9CE3vKIXTvIStKyGLScfeo+EpOB9CE5PPBWOKgvdF+50RFuXAJcttzeIzsMYtQ8GiJZNztcufBXb8oW4j4e/ZTRgx/SdW17vgWdthsdDE9MXN25cm57uUw4p7VxpqJrYn1dd0Ys2WO30loijdLqgDXcjnIY//aTo7ORv2WIIC9NHK2vx0jJkx0F+o3W0jVHgf5ZxM1uAivY2SMap+4fx83cpbzUvn/TJpVkkGL+QrDMxcvW4+AsvM04z2haWHH56Jcs51Bf65On3Vxe6xsU/Mob6eyIGw9bGaaA=="
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "https://ccadmin-z1ma.oracleoutsourcing.com/ccstore/v1/products/athlete-duck",
+							"protocol": "https",
+							"host": [
+								"ccadmin-z1ma",
+								"oracleoutsourcing",
+								"com"
+							],
+							"path": [
+								"ccstore",
+								"v1",
+								"products",
+								"athlete-duck"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

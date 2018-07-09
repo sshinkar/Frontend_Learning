@@ -1,0 +1,157 @@
+{
+    "listVolumePrice": null,
+    "excludeFromSitemap": false,
+    "relatedProducts": null,
+    "orderLimit": null,
+    "listPrices": {
+        "australianDollarPriceGroup": null,
+        "defaultPriceGroup": 2.79
+    },
+    "type": null,
+    "seoMetaInfo": null,
+    "largeImageURLs": [
+        "/ccstore/v1/images/?source=/file/v607332142059610640/products/athlete-duck.jpg&height=940&width=940"
+    ],
+    "listVolumePrices": {
+        "australianDollarPriceGroup": null,
+        "defaultPriceGroup": null
+    },
+    "addOnProducts": [],
+    "primaryImageAltText": "Athletic Rubber Duck",
+    "links": [
+        {
+            "rel": "self",
+            "href": "https://ccadmin-z1ma.oracleoutsourcing.com:443/ccstore/v1/products/athlete-duck"
+        }
+    ],
+    "id": "athlete-duck",
+    "brand": "Duckee",
+    "parentCategories": [
+        {
+            "repositoryId": "ducks"
+        }
+    ],
+    "height": null,
+    "defaultProductListingSku": null,
+    "unitOfMeasure": null,
+    "primaryMediumImageURL": "/ccstore/v1/images/?source=/file/v607332142059610640/products/athlete-duck.jpg&height=475&width=475",
+    "seoKeywordsDerived": "Athletic Rubber Duck,Rubber Ducks",
+    "seoUrlSlugDerived": "Athletic Rubber Duck",
+    "weight": null,
+    "active": true,
+    "thumbImageURLs": [
+        "/ccstore/v1/images/?source=/file/v607332142059610640/products/athlete-duck.jpg&height=100&width=100"
+    ],
+    "creationDate": "2018-06-05T13:31:32.000Z",
+    "route": "/athletic-rubber-duck/product/athlete-duck",
+    "relatedArticles": [],
+    "mediumImageURLs": [
+        "/ccstore/v1/images/?source=/file/v607332142059610640/products/athlete-duck.jpg&height=475&width=475"
+    ],
+    "primarySourceImageURL": "/ccstore/v1/images/?source=/file/v607332142059610640/products/athlete-duck.jpg&height=300&width=300",
+    "parentCategory": null,
+    "sourceImageURLs": [
+        "/ccstore/v1/images/?source=/file/v607332142059610640/products/athlete-duck.jpg&height=300&width=300"
+    ],
+    "primarySmallImageURL": "/ccstore/v1/images/?source=/file/v607332142059610640/products/athlete-duck.jpg&height=300&width=300",
+    "avgCustRating": null,
+    "longDescription": "<p>These one goes fast! Get yours while we still have &#39;em in stock!</p>",
+    "primaryThumbImageURL": "/ccstore/v1/images/?source=/file/v607332142059610640/products/athlete-duck.jpg&height=100&width=100",
+    "nonreturnable": false,
+    "displayName": "Athletic Rubber Duck",
+    "seoDescriptionDerived": "Athletic Rubber Duck,You don't go for a run, but your duck goes!",
+    "description": "You don't go for a run, but your duck goes!",
+    "salePrices": {
+        "australianDollarPriceGroup": null,
+        "defaultPriceGroup": null
+    },
+    "primaryFullImageURL": "/ccstore/v1/images/?source=/file/v607332142059610640/products/athlete-duck.jpg",
+    "seoTitleDerived": "Athletic Rubber Duck",
+    "primaryLargeImageURL": "/ccstore/v1/images/?source=/file/v607332142059610640/products/athlete-duck.jpg&height=940&width=940",
+    "smallImageURLs": [
+        "/ccstore/v1/images/?source=/file/v607332142059610640/products/athlete-duck.jpg&height=300&width=300"
+    ],
+    "shippingSurcharges": {
+        "australianDollarPriceGroup": null,
+        "defaultPriceGroup": 1.09
+    },
+    "saleVolumePrices": {
+        "australianDollarPriceGroup": null,
+        "defaultPriceGroup": null
+    },
+    "primaryImageTitle": "Athletic Rubber Duck",
+    "saleVolumePrice": null,
+    "childSKUs": [
+        {
+            "productFamily": null,
+            "dynamicPropertyMapLong": {},
+            "primaryThumbImageURL": null,
+            "bundleLinks": [],
+            "largeImage": null,
+            "smallImage": null,
+            "listVolumePrice": null,
+            "nonreturnable": false,
+            "displayName": "sampleSku",
+            "salePrices": {
+                "australianDollarPriceGroup": null,
+                "defaultPriceGroup": 2.5
+            },
+            "listPrices": {
+                "australianDollarPriceGroup": null,
+                "defaultPriceGroup": null
+            },
+            "primaryFullImageURL": null,
+            "productListingSku": null,
+            "largeImageURLs": [],
+            "productLine": null,
+            "primaryLargeImageURL": null,
+            "listVolumePrices": {
+                "australianDollarPriceGroup": null,
+                "defaultPriceGroup": null
+            },
+            "smallImageURLs": [],
+            "model": null,
+            "thumbnailImage": null,
+            "barcode": null,
+            "saleVolumePrices": {
+                "australianDollarPriceGroup": null,
+                "defaultPriceGroup": null
+            },
+            "salePriceEndDate": null,
+            "saleVolumePrice": null,
+            "salePriceStartDate": null,
+            "images": [],
+            "quantity": 10,
+            "unitOfMeasure": null,
+            "salePrice": 2.5,
+            "primaryMediumImageURL": null,
+            "fullImageURLs": [],
+            "dynamicPropertyMapBigString": {},
+            "active": true,
+            "thumbImageURLs": [],
+            "mediumImageURLs": [],
+            "repositoryId": "sku1",
+            "primarySourceImageURL": null,
+            "sourceImageURLs": [],
+            "primarySmallImageURL": null,
+            "configurable": false,
+            "listPrice": 2.79
+        }
+    ],
+    "relatedMediaContent": [],
+    "salePrice": null,
+    "fullImageURLs": [
+        "/ccstore/v1/images/?source=/file/v607332142059610640/products/athlete-duck.jpg"
+    ],
+    "length": null,
+    "variantValuesOrder": {},
+    "notForIndividualSale": false,
+    "repositoryId": "athlete-duck",
+    "width": null,
+    "shippingSurcharge": 1.09,
+    "productImagesMetadata": [
+        {}
+    ],
+    "configurable": false,
+    "listPrice": 2.79
+}
