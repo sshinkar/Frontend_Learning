@@ -1,0 +1,10 @@
+{
+    "files": [
+        "main.ts",
+        "ajax.ts"
+    ],
+    "compilerOptions": {
+        "noImplicitAny": true,
+        "target": "es5"
+    }
+}

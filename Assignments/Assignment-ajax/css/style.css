@@ -1,0 +1,37 @@
+.card{
+    padding: 5px; 
+    border: 1px solid #d5d5d5;
+    margin: 5px;
+    
+}
+.cardHolder{
+    /* margin: 5px; */
+}
+.card:hover{
+    /* padding: 0; */
+    border-color: rgba(79, 79, 199, 0.753);
+    border-width: 3px;
+    box-shadow: 1px 1px 13px 1px;
+    cursor: pointer; 
+}
+.profile-container{
+    margin: 10% auto auto auto;
+    padding: 10px;
+}
+.profile-holder{
+    margin: auto;
+    padding: 10px;
+}
+.circle{
+    border-radius: 50%;
+}
+.center{
+    text-align: center;
+}
+.profile-image{
+    height: 300px;
+    width: 300px;
+}
+.card-text{
+    text-align: left;
+}
