@@ -1,4 +1,20 @@
-.pa-main-menu{
-    background-color: blue;
+header{
     margin-bottom: 20px;
+}
+.pa-main-menu{
+    background-color: brown;
+}
+footer{
+    background-color: brown;
+    color: aliceblue;
+    font-size: 12px;
+    margin-top: 20px;
+}
+footer a.nav-link {
+    color : cyan;
+    padding-bottom: 2px;
+    padding-top: 2px;
+}
+img.footer-logo{
+    width: 150px;
 }

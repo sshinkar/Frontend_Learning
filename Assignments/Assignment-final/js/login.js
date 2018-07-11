@@ -12,7 +12,7 @@ function login(){
 
     $.ajax({
         type: "POST",
-        url: "https://ccstore-z1ma.oracleoutsourcing.com/ccstore/v1/login/",
+        url: "https://oe-final.herokuapp.com/auth",
         data: formData,
         header : {
             "Content-Type" : "application/x-www-form-urlencoded",
