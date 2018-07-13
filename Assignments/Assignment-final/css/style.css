@@ -2,10 +2,10 @@ header{
     margin-bottom: 20px;
 }
 .pa-main-menu{
-    background-color: brown;
+    
 }
 footer{
-    background-color: brown;
+    
     color: aliceblue;
     font-size: 12px;
     margin-top: 20px;
@@ -17,4 +17,36 @@ footer a.nav-link {
 }
 img.footer-logo{
     width: 150px;
+}
+.white{
+    color: white;
+}
+.white:hover{
+    color: white;
+}
+.badge-notify{
+    background:white;
+    position:absolute;
+    top:0px;
+    margin: 2px;
+}
+#ui-id-1{
+    position: relative;
+    top: -2794.98px;
+    left: 1012.5px;
+    display: block;
+    background-color: white;
+    border: 1px solid;
+    width: 200px;
+    list-style-type: none;
+}
+.theme-color{
+    color : rgba(13, 44, 129, 0.829);
+}
+.theme-bg{
+    background-color: rgba(13, 44, 129, 0.829);
+}
+.main-logo{
+    height: 50px;
+    width: 50px;
 }

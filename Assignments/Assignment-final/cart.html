@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js" ></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script type="text/javascript" src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>	
+    <script type="text/javascript" src="js/main.js" ></script>
+    <script type="text/javascript" src="js/cart.js" ></script>
+    <link href='node_modules/bootstrap/dist/css/bootstrap.min.css' rel='stylesheet'>
+    <link href='./node_modules/@fortawesome/fontawesome-free/css/all.css' rel='stylesheet'>
+    <link href='css/style.css' rel='stylesheet'>
+    <link href='css/cart.css' rel='stylesheet'>
+<title>Assignment-Final</title>
+</head>
+<body>
+<header>
+        <div class="container">
+            <nav class="navbar navbar-expand-sm bg-light">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                            <a href="index.html"><img src="images/svg/pa-logo.svg" alt="Princess Auto Logo"></a>
+                    </div>
+                    
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="nav-item"><a href="#" class="nav-link theme-color"><i class="fas fa-map-marker-alt"></i> Select My Store</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link theme-color"><span class="glyphicon glyphicon-log-in"></span> Gift Cards</a></li>
+                        <li class="nav-item" id="logout"><a href="#" class="nav-link theme-color"><i class="fas fa-lock"></i> Logout</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link theme-color"><span class="glyphicon glyphicon-user"></span> EN English</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="row pa-main-menu theme-bg"> 
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-md-8 col-sm-12">
+                        <nav class="navbar navbar-expand-sm">
+                            <ul class="nav navbar-nav">
+                                <li class="nav-item"><a href="#" class="nav-link white"><i class="fas fa-bars"></i> SHOP</a></li>
+                                <li class="nav-item"><a href="#" class="nav-link white"><span class="glyphicon glyphicon-log-in"></span> SALE</a></li>
+                                <li class="nav-item"><a href="#" class="nav-link white"><span class="glyphicon glyphicon-user"></span> FLYER</a></li>
+                                <li class="nav-item"><a href="#" class="nav-link white"><span class="glyphicon glyphicon-user"></span> SHOWCASE</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12">
+                        <nav class="navbar navbar-expand-sm">
+                            <ul class="nav navbar-nav">
+                                <li class="nav-item"><input class="form-control mr-sm-2" type="text" placeholder="Search" id="searchProducts"></li>
+                                <li class="nav-item"></li>
+                                <li class="nav-item"><a href="cart.html" class="nav-link white">MY CART <i class="fas fa-shopping-cart"><span class="badge badge-notify badge-cart-count theme-color">0</span></i></a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+<br>
+
+<div class="container cart-container">
+    <div class="row">
+        <table class="table table-striped col-lg-8 col-md-12 col-sm-12">
+            <thead>
+                <tr>
+                <th scope="col"></th>
+                <th scope="col">Details</th>
+                <th scope="col">Qty.</th>
+                <th scope="col">Total</th>
+                </tr>
+            </thead>
+            <tbody class="cart">
+                <!-- <tr>
+                    <td><img class="ci-image" src="https://oe-final.herokuapp.com/images/pixar-cars.jpeg"></td>
+                    <td class="ci-details">
+                        <ul class="nav flex-column">
+                            <li class="nav-item ci-name">NAME</li>
+                            <li class="nav-item ci-price">$ 10.00</li>
+                        </ul>
+                    </td>
+                    <td class="ci-quantity">5</td>
+                    <td class="ci-total">$ 50.00</td>
+                </tr> -->
+            </tbody>
+        </table>
+        <div class="jumbotron col-lg-3 col-md-12 col-sm-12 price-details">
+            <b> Price of <span class="cart-count">0</span> items :  <span class="cart-price">$ 0</span> </b>
+        </div>
+    </div>
+</div>
+
+<br>
+<footer class="row theme-bg">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+                <nav class="nav flex-column">
+                    <b class="nav-link">FIND YOUR STORE</b>
+                    <form class="nav-link">
+                        <div class="form-row">
+                            <div class="col">
+                                <input type="text" class="form-control" aria-describedby="locationHelp" placeholder="eg. AIA AIA">
+                                <small id="locationHelp" class="form-text text-muted">45 locations across Canada</small>
+                            </div>
+                            <div class="col">
+                                <button type="submit" class="btn btn-primary mb-2">LOCATE</button>
+                            </div>
+                        </div>
+                    </form>
+                    <img class="nav-link footer-logo" src="images/svg/pa-logo.svg" alt="Princess Auto Logo">
+                </nav>
+            </div>
+            <div class="col-lg-2">
+                <nav class="nav flex-column">
+                    <b class="nav-link">CUSTOMER SERVICE</b>
+                    <a class="nav-link" href="#">Contact Us</a>
+                    <a class="nav-link" href="#">Shipping & Returns</a>
+                    <a class="nav-link" href="#">Notices & Recalls</a>
+                    <a class="nav-link" href="#">Order Status</a>
+                    <a class="nav-link" href="#">Browse By Brand</a>
+                    <a class="nav-link" href="#">Wishlist Lookup</a>
+                    <a class="nav-link" href="#">Financing</a>
+                </nav>
+            </div>
+            <div class="col-lg-2">
+                <nav class="nav flex-column">
+                    <b class="nav-link">ABOUT US</b>
+                    <a class="nav-link" href="#">Our Story</a>
+                    <a class="nav-link" href="#">Careeres</a>
+                    <a class="nav-link" href="#">Foundation</a>
+                    <a class="nav-link" href="#">Media Room</a>
+                    <a class="nav-link" href="#">Accessibility</a>
+                </nav>
+            </div>
+            <div class="col-lg-4">
+                <nav class="nav flex-column">
+                    <b class="nav-link">GIFT CARDS</b>
+                    <a class="nav-link" href="#">Learn More</a>
+                </nav>
+                <nav class="nav flex-column">
+                    <b class="nav-link">CONNECT WITH US</b>
+                </nav>
+                <nav class="nav">
+                    <i class="fab fa-facebook-square nav-link"></i>
+                    <i class="fab fa-twitter-square nav-link"></i>
+                    <i class="fab fa-instagram nav-link"></i>
+                    <i class="fab fa-youtube nav-link"></i>
+                </nav>
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

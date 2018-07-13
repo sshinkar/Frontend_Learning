@@ -1,3 +1,19 @@
 .card-img-top{
     padding: 5px;
 }
+.product-card-image{
+    height: 253px;
+}
+.product-card-holder{
+    padding: 15px;
+}
+.card:hover{
+    /* padding: 0; */
+    /* border-color: rgba(79, 79, 199, 0.753); */
+    border-width: 1px;
+    box-shadow: 1px 1px 13px 1px;
+    cursor: pointer; 
+}
+.card{
+    background-color: beige;
+}
